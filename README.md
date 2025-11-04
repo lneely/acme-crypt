@@ -38,9 +38,9 @@ Ensure your GPG agent is configured with a GUI pinentry program (e.g., pinentry-
 
 1. In Acme, highlight an encrypted file (`.gpg`, `.asc`, or `.pgp`)
 2. Add `CryptGet` to the window tag
-3. Middle-click on the highlighted filename to pass it as an argument to CryptGet
+3. Highlight the encrypted filename, hold the left button, then middle click CryptGet to decrypt and open the file.
 4. A new window opens with the decrypted content, named after the original file without the encryption extension
-5. The new window automatically has `CryptPut` added to its tag
+5. The new window automatically has `CryptPut` added to its tag.
 
 ### Encrypting Files (CryptPut)
 
@@ -62,7 +62,7 @@ Ensure your GPG agent is configured with a GUI pinentry program (e.g., pinentry-
 
 CryptGet automatically strips these extensions when creating the editing window:
 - `.gpg`
-- `.asc` 
+- `.asc`
 - `.pgp`
 
 ## Architecture
