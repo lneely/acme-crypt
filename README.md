@@ -83,4 +83,4 @@ This design allows for easy addition of other encryption tools (OpenSSL, age, et
 
 ## License
 
-MIT
+GNU General Public License v3
