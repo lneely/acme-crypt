@@ -44,9 +44,17 @@ Ensure your GPG agent is configured with a GUI pinentry program (e.g., pinentry-
 
 ### Encrypting Files (CryptPut)
 
+#### From Acme Window
 1. Edit the decrypted file content in the Acme window created by CryptGet
 2. Middle-click on `CryptPut` in the window tag
 3. The content is encrypted and saved back to the original encrypted file path
+
+#### From Stdin (New Files)
+Create new encrypted files by piping content to CryptPut:
+```bash
+echo "This is my content" | CryptPut /path/to/file
+```
+This encrypts the stdin content and saves it to `/path/to/file.gpg`
 
 ## Workflow Example
 
