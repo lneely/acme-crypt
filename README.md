@@ -51,10 +51,21 @@ Ensure your GPG agent is configured with a GUI pinentry program (e.g., pinentry-
 
 #### From Stdin (New Files)
 Create new encrypted files by piping content to CryptPut:
-```bash
-echo "This is my content" | CryptPut /path/to/file
+
+**Single line:**
+```rc
+echo 'This is my content' | CryptPut /path/to/file
 ```
-This encrypts the stdin content and saves it to `/path/to/file.gpg`
+
+
+**Multi-line with rc shell:**
+```rc
+echo 'This is my
+content with multiple
+lines of text.' | CryptPut /path/to/file
+```
+
+CryptPut encrypts the stdin content and save it to `/path/to/file.gpg` (automatically adding the `.gpg` extension).
 
 ## Workflow Example
 
